@@ -1,7 +1,7 @@
 import {
   LayoutDashboard, Package, ShoppingCart, ArrowDownToLine,
   ArrowUpFromLine, BarChart3, FileText, AlertTriangle,
-  Users, Settings, ChevronDown
+  Users, Settings, LogOut
 } from 'lucide-react'
 
 const navItems = [
@@ -17,7 +17,7 @@ const navItems = [
   { icon: Settings, label: 'Settings' },
 ]
 
-export default function Sidebar() {
+export default function Sidebar({ onLogout }) {
   return (
     <aside className="sidebar">
       <div className="sidebar-logo">
@@ -27,7 +27,7 @@ export default function Sidebar() {
       <ul className="nav-list">
         {navItems.map(({ icon: Icon, label, active }) => (
           <li key={label} className="nav-item">
-            <a href="#" className={active ? 'active' : ''}>
+            <a href="#" className={active ? 'active' : ''} onClick={(e) => e.preventDefault()}>
               <Icon size={18} />
               {label}
             </a>
@@ -48,13 +48,13 @@ export default function Sidebar() {
         </div>
       </div>
 
-      <div className="user-profile">
+      <div className="user-profile" onClick={onLogout} title="Click to Logout" style={{ cursor: onLogout ? 'pointer' : 'default' }}>
         <div className="user-avatar">AD</div>
         <div className="user-info">
           <div className="name">Admin User</div>
           <div className="role">Administrator</div>
         </div>
-        <ChevronDown size={16} style={{ color: 'var(--text-muted)' }} />
+        <LogOut size={16} className="logout-icon" style={{ color: 'var(--text-muted)' }} />
       </div>
     </aside>
   )
