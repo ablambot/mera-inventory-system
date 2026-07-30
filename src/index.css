@@ -132,13 +132,19 @@ h1, h2, h3, h4, h5, h6 {
   padding: 8px 14px 28px;
 }
 
-.sidebar-logo h1 {
-  font-family: var(--font-logo);
-  font-size: 22px;
-  font-weight: 800;
-  letter-spacing: 0.02em;
-  color: var(--text-primary);
-  text-transform: uppercase;
+.brand-logo-img {
+  display: block;
+  object-fit: contain;
+  transition: filter var(--transition);
+}
+
+.sidebar-logo-img {
+  height: 30px;
+  max-width: 140px;
+}
+
+[data-theme="light"] .brand-logo-img {
+  filter: invert(1);
 }
 
 .nav-list {
@@ -898,14 +904,9 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 32px;
 }
 
-.login-logo {
-  font-family: var(--font-logo);
-  font-size: 34px;
-  font-weight: 800;
-  letter-spacing: 0.02em;
-  color: var(--text-primary);
-  text-transform: uppercase;
-  margin-bottom: 8px;
+.login-logo-img {
+  height: 48px;
+  margin: 0 auto 12px;
 }
 
 .login-subtitle {
