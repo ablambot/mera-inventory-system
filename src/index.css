@@ -929,6 +929,34 @@ h1, h2, h3, h4, h5, h6 {
   transform: scale(2.3);
   transform-origin: center center;
   margin: 0 auto 4px;
+  animation: logoEntrance 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards, logoPulse 5s ease-in-out 0.9s infinite;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+}
+
+.login-logo-img:hover {
+  animation-play-state: paused;
+  transform: scale(2.44) translateY(-3px);
+}
+
+@keyframes logoEntrance {
+  0% {
+    opacity: 0;
+    transform: scale(2.0) translateY(-12px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(2.3) translateY(0);
+  }
+}
+
+@keyframes logoPulse {
+  0%, 100% {
+    transform: scale(2.3);
+  }
+  50% {
+    transform: scale(2.36);
+  }
 }
 
 .login-subtitle {
