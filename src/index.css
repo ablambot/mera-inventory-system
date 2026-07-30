@@ -129,7 +129,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sidebar-logo {
-  padding: 8px 14px 28px;
+  padding: 4px 8px 20px;
 }
 
 .brand-logo-img {
@@ -139,8 +139,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sidebar-logo-img {
-  height: 30px;
-  max-width: 140px;
+  height: 44px;
+  max-width: 160px;
 }
 
 [data-theme="light"] .brand-logo-img {
@@ -905,8 +905,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .login-logo-img {
-  height: 48px;
-  margin: 0 auto 12px;
+  height: 68px;
+  margin: 0 auto 8px;
 }
 
 .login-subtitle {
