@@ -2,6 +2,7 @@
 :root {
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-display: 'Poppins', 'Inter', sans-serif;
+  --font-logo: 'Unbounded', 'Syne', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
 
   /* Shared */
@@ -118,10 +119,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sidebar-logo h1 {
-  font-size: 22px;
-  font-weight: 800;
-  letter-spacing: 3px;
+  font-family: var(--font-logo);
+  font-size: 21px;
+  font-weight: 900;
+  letter-spacing: 0.05em;
   color: var(--text-primary);
+  text-transform: uppercase;
 }
 
 .nav-list {
@@ -882,12 +885,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .login-logo {
-  font-family: var(--font-display);
-  font-size: 32px;
-  font-weight: 800;
-  letter-spacing: 4px;
+  font-family: var(--font-logo);
+  font-size: 34px;
+  font-weight: 900;
+  letter-spacing: 0.05em;
   color: var(--text-primary);
-  margin-bottom: 6px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
 }
 
 .login-subtitle {
