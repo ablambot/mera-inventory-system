@@ -129,18 +129,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sidebar-logo {
-  padding: 4px 8px 20px;
+  padding: 16px 14px 32px;
+  overflow: hidden;
 }
 
 .brand-logo-img {
   display: block;
   object-fit: contain;
-  transition: filter var(--transition);
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  transition: filter var(--transition), transform var(--transition);
 }
 
 .sidebar-logo-img {
-  height: 44px;
-  max-width: 160px;
+  height: 54px;
+  width: 170px;
+  transform: scale(1.85);
+  transform-origin: left center;
 }
 
 [data-theme="light"] .brand-logo-img {
@@ -902,11 +907,15 @@ h1, h2, h3, h4, h5, h6 {
 .login-header {
   text-align: center;
   margin-bottom: 32px;
+  overflow: hidden;
 }
 
 .login-logo-img {
-  height: 68px;
-  margin: 0 auto 8px;
+  height: 96px;
+  width: 260px;
+  transform: scale(1.85);
+  transform-origin: center;
+  margin: 0 auto;
 }
 
 .login-subtitle {
