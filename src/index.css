@@ -2,7 +2,7 @@
 :root {
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-display: 'Poppins', 'Inter', sans-serif;
-  --font-logo: 'Unbounded', 'Syne', sans-serif;
+  --font-logo: 'Syncopate', 'Space Grotesk', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
 
   /* Shared */
@@ -120,9 +120,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .sidebar-logo h1 {
   font-family: var(--font-logo);
-  font-size: 21px;
-  font-weight: 900;
-  letter-spacing: 0.05em;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
   color: var(--text-primary);
   text-transform: uppercase;
 }
@@ -886,9 +886,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .login-logo {
   font-family: var(--font-logo);
-  font-size: 34px;
-  font-weight: 900;
-  letter-spacing: 0.05em;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
   color: var(--text-primary);
   text-transform: uppercase;
   margin-bottom: 8px;
