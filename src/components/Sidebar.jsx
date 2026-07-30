@@ -21,7 +21,7 @@ export default function Sidebar({ onLogout }) {
   return (
     <aside className="sidebar">
       <div className="sidebar-logo">
-        <img src="/logo.svg" alt="MERA Logo" className="brand-logo-img sidebar-logo-img" />
+        <img src="/logo.png" alt="MERA Logo" className="brand-logo-img sidebar-logo-img" />
       </div>
 
       <ul className="nav-list">

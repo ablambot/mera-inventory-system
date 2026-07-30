@@ -34,7 +34,7 @@ export default function Login({ onLogin }) {
         <div className="login-card">
           {/* Header & Logo */}
           <div className="login-header">
-            <img src="/logo.svg" alt="MERA Logo" className="brand-logo-img login-logo-img" />
+            <img src="/logo.png" alt="MERA Logo" className="brand-logo-img login-logo-img" />
             <p className="login-subtitle">Warehouse Operations Management System</p>
           </div>
 
